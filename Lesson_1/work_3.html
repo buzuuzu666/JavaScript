@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework</title>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=cyXi0q1PHwqk0-IqymqqFED7qanj8f1EeOCdhVPslaqZhdcJO-E2jU9QUiMrmA3JgZFUUNRzwcz-okeb8P8NJRCrGrILzbTB8AHAisyA_I9CPwXSQa75UxkG4Z9qeQ1WVZhgxlGeTMx5PhQMfOkbNYKC3glfKik9M0GhGN_00_jKWM2NwFZI874kluiSV9FZJrdvq4G-4SMkEwOzMLLWFu4IRsoN11YahEhrQyborJo_towh2ax_AMkCpTMzKyfu_I2oEr_80oW-X5sp6sYGkjWORFJPngAb68oQwW0x-XrZ7RKhwrvBSTAnHbL3kACKKifO4OPnavyI4_Mx9Fkr4W0dI-Itqeb8usyuzLNcho1Vs3PDGkqcXF7BDCpMYi-7a_xJU0quXxejQYevB9G_4QZDSpjT2ji9B32daiiArg3zH6uikXdM05ZEpUx4FLRhzdHlxd47o0m2_9d6AV6BIo0Ffg1G6ICzdPDhKJGVzpevUr3x_msP1w9IlrsupcRP7ayy7Rd1oOSdalJ0gcUKp3-ExnXtwmriZJnSNo79IN5I2dw9XDPA--K930I-hn94qKAaXUQuncn-bEzuaOYNZx48El_UJu9TPDVksLuBgH50vcbXpiXz39piAIXaVkGS7Mnku1cOyoJ8e9_hcNh9th8CUkQRQFIF3YFwmJIW1dkZ6HuqV_JsxWKHXigN9t4O8aTWB_66XEuGt0StMYixWs2dy01K2BYhMsRR4gju2LdYg-Nc8bnCu3VPodTRtAoK_vSUQN-_Xqu3yhDp1zyaMlXUU6CIgng7EVPNWvoW5b5X3B_5wKOevuaCFW7KzpulEUsSY-vZMCaMYWA_nYHfdTGoETt5B0pvlThpVBlnof6YwMig-XEoEbJILOEA4OH-8jFFX-Lmtum5g_ipib1L6tgno1qB-01N6I8V-EEt2zFqLUwAkbqPiwKDKJBUdHMo59cYXHVCyHBQO8Ci0e6ATLrFDgFa18jcrRBEvL26hwoH9LQahejsa6-mRs-m2pwvdfcdVeSbPLmabAd0PWgoHj9baS3hU5RlRX9CUZCxJoqTVGFuQ1jILMk1mWKz_AbIlqvETPOduS8anvEB3Y4jpIEQhz9QR_IpQDTLcDKNB6xGlxuWRbXr-Tp8jTSNB26gkTHi5vLsLYIQxd8R4kU3cMkwJpwhPEvXt6IJBDSUnjU" charset="UTF-8"></script></head>
+<body>
+<!--
+Обязательное задание.
+
+Необходимо вывести в консоль значения выражений:
+10 + 10 + "10"
+10 + "10" + 10
+10 + 10 + +"10"
+10 / -""
+10 / +"2,5"
+В этих выражениях нет опечаток, вам их нужно скопировать и вывести в консоль.
+
+Над каждым выводом в консоль необходимо объяснить почему мы получаем такой
+результат.
+
+Объяснения пишите в таком формате:
+/*
+1. 4 умножаем на 2 получаем 8.
+2. 3 минус 8 получаем -5.
+3. С помощью console.log выводим число -5 в консоль.
+*/
+console.log(3 - 4 * 2);
+-->
+<script>
+  "use strict";
+
+	/*
+	10 + 10 + "10":
+	10 + 10 = 20 (сложили два числа)
+	20 + "10" = 2010 (конкатенация числа и строки)
+	*/
+	console.log(10 + 10 + "10");
+
+	/*
+	10 + "10" + 10:
+	10 + "10" = 1010 (конкатенация числа и строки)
+	1010 + 10 = 101010 (строка 1010 складывается с преобразованной в строку 10, преобразование 10 в строку произошло автоматически из-за разного типа данных)
+	*/
+	console.log(10 + "10" + 10);
+
+	/*
+	10 + 10 + +"10":
+	10 + 10 = 20 (сложили два числа)
+	20 + +"10" = 30 (унарный оператор +"10" превращает строку в число)
+	*/
+	console.log(10 + 10 + +"10");
+
+	/*
+	10 / -"":
+	10 / -0 = -Infinity (унарный оператор -"" превращает пустую строку в 0)
+	*/
+	console.log(10 / -"");
+
+	/*
+	10 / +"2,5":
+	10 / NaN = NaN (унарный оператор +"2,5" преобразует в NaN, потому что разделителем дробного числа является точка)
+	*/
+	console.log(10 / +"2,5")
+</script>
+</body>
+</html>
