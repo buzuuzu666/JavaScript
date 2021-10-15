@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework</title>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=4_C3EPS3VTqTjRO_5wiQmJQAcmp7Q-cUm7Wt1mjF9k_zEtxTY--Cc8qM5pqdcM_Bb7CIC7Tv3dSg9wF-Rz7UKgx2bigTrgsettRQ1sFsbnYRxV-1J2wBx8SjhOlXZpKhBiNGpJVkcuGI_8ssX_9aw376qRWqq6yW8CjdL70skurPjiIXYwIfiYaN_QU1YmbBCVYJAxuyW6AtIEuIgBiOqEX2MtFCTLj1IBrinLvPlpDk-ggHSZK8Cd-nGw60bBBJT_OdErTbQ1QpHlmYLbCg4Egu4DyUIxjIBzj52dFJ4mJSipJYKxXY5GdYGZeI526K_ckWaFMdoNr1z61y1VbdDGJIRctTm6mb1TJ-kLe3K1KCwekivg_LVNB2X42PkqFjAfscO5XcAkf61lEoLERdxpVWWHov-GrCooj2gBrkr7hobprbOCLc6kQ9lPTOvHSZIwa33o5OoaVfT3-bPJcHNUQo9QKm5kQIxGKIL5OG8IYojydjKEtE7oQqc-32Q5y-br_ki8oL6cpbGkKsDi9tjx7Uu-bI2lvgDYPY0xCCU8s0Mw7WNeoIg3aqKhTEGpA1_SVkvEsmwSLRoTLDF7WVdB4WmleG_V0SqfIxhL_OsIbP93NULTZF3DL9QcgVpsePAUd7tH7rVkD1ztYew6g-P_A6tFX8OL2Ij1MCmZR1hmbDWYWM_mR5At3MYyxFA8enJsEDmzA9PCDsSuqodCNefbpyEgURzY1LUe_scsC3T-tvbLtEUi2ep59zgLaWQjAFs8S3b1VqnXyNemp9s2R6hchYlCBBgYmwOvGYxUivOuOgO3zVuWiwfyNz0M5xal9YK4N-NbReSsN5V5MPP2ATrq6JrbuP6Lwnpkx3uhvoctfOCs7Kib36KHXfwbdWgmWZgezlMMbfhd466X5irVQvffp1hLhnNPI9eaSifnyhpPuZUwf7O5mkAumvTkjdZq1__Z-qJJiXsYBHmlBcifUkhmdWWaCpiL-JxaGAQmBU36STyhz0G0sWxQ-PwaKclyGRmLF1Ip8osOkRAK5x8IiGdbif2vFGJCnvxhaXAjHsiL8eaE7_fBs82FyYqunoErkRciT-BzETI3qfPrI0rxdpFQY6zNPrQsliGBsGrKRHI5ogAZTfk2bq8zfLxgdoPRDm9jnOCUVJUcYvmmfwRok8OwXlG7wnG7aAYpUK1h9hKGU" charset="UTF-8"></script></head>
+<body>
+<!--
+Обязательное задание.
+
+Необходимо пользователя попросить ввести температуру в градусах Цельсия,
+преобразовать введенное пользователем значение в соответствующую температуру
+в градусах по Фаренгейту и вывести в alert сообщение с текстом:
+"Цельсий: {C}, Фаренгейт: {F}"
+Где вместо {C} и {F} должны быть подставлены соответствующие значения, которые
+были получены ранее.
+Формула перевода градусов Цельсия в градусы Фаренгейта:
+градусы Фаренгейта = (9 / 5) * градусы Цельсия + 32
+
+Уточнение: пользователь всегда вводит корректное число.
+-->
+<script>
+  "use strict";
+
+  const c = +prompt("Введите температуру в градусах Цельсия.");
+  const f = (9 / 5) * c + 32;
+  alert(`Цельсий: ${c}, Фаренгейт: ${f.toFixed(1)}`);
+</script>
+</body>
+</html>
